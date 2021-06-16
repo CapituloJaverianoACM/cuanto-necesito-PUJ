@@ -1,1 +1,37 @@
-<p>gradelist works!</p>
+<mat-card>
+    <form [formGroup]="myForm">
+        <div formArrayName="grades">
+            <div *ngFor="let grade of grades.controls; let i=index;" [formGroupName]="i">
+                <mat-form-field>
+                    <input matInput placeholder="Nota" type="number" step=".1" min="0" formControlName="grade">
+                    <mat-error *ngIf="getGrade(i).errors?.min">
+                        Tu nota debe ser un número positivo.
+                    </mat-error>
+                    <mat-error *ngIf="getGrade(i).errors?.max">
+                        Tu nota debe ser un número menor a 5.0
+                    </mat-error>
+                    <mat-error *ngIf="getGrade(i).errors?.required">
+                        Ingresa una nota.
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Porcentaje %"  type="number" min="0" formControlName="porcentage">
+                    <mat-error *ngIf="getPorcentage(i).errors?.min">
+                        El porcentaje debe ser un número mayor a 1
+                    </mat-error>
+                    <mat-error *ngIf="getPorcentage(i).errors?.max">
+                        El porcentaje debe ser un número menor a 100
+                    </mat-error>
+                    <mat-error *ngIf="getPorcentage(i).errors?.required">
+                        Ingresa un porcentaje.
+                    </mat-error>
+                </mat-form-field>
+                <button mat-icon-button *ngIf="i!=0">
+                    <mat-icon color="primary" (click)="deleteGrade(i)">cancel</mat-icon>
+                </button>
+            </div>
+        </div>
+        <button mat-raised-button color="primary" (click)="addGrade()">Agregar nota</button>
+        <button mat-raised-button [disabled]="myForm.invalid" color="primary" (click)="getFinalGrade()">Calcular nota</button>
+    </form>
+</mat-card>
