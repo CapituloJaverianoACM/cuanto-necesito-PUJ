@@ -15,7 +15,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatCardModule} from '@angular/material/card'; 
+import {MatCardModule} from '@angular/material/card';
+import { AcademicComponent } from './academic/academic.component';
+import { AcademicinformationComponent } from './academicinformation/academicinformation.component'; 
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {MatCardModule} from '@angular/material/card';
     MainBodyComponent,
     CNBodyComponent,
     GradelistComponent,
-    GradeinformationComponent
+    GradeinformationComponent,
+    AcademicComponent,
+    AcademicinformationComponent
   ],
   imports: [
     BrowserModule,
