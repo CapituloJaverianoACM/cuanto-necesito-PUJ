@@ -1,0 +1,59 @@
+form 
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.grades
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    min-width: 362px;
+}
+
+
+
+mat-form-field
+{
+    min-width: 250px;
+    max-width: 300px;
+    text-decoration: none;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+button
+{
+    align-self: center;
+}
+
+
+.AddGrade
+{
+    position: relative;
+    margin-left: 19px;
+    margin-bottom: 30px;
+    left:calc(0% - 225px);
+}
+
+@media only screen and (max-width: 748px) {
+    .AddGrade
+    {
+        left:0;
+        align-self: flex-start;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    form {
+        width: 100%;
+    }
+}

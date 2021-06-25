@@ -1,0 +1,29 @@
+form 
+{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+mat-form-field
+{
+    min-width: 300px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+button
+{
+    align-self: center;
+}
+
+@media only screen and (max-width: 500px) {
+    form {
+        width: 100%;
+    }
+}

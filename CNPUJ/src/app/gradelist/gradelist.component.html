@@ -1,7 +1,7 @@
 <mat-card>
     <form [formGroup]="myForm">
         <div formArrayName="grades">
-            <div *ngFor="let grade of grades.controls; let i=index;" [formGroupName]="i">
+            <div class="grades" *ngFor="let grade of grades.controls; let i=index;" [formGroupName]="i">
                 <mat-form-field>
                     <input matInput placeholder="Nota" type="number" step=".1" min="0" formControlName="grade">
                     <mat-error *ngIf="getGrade(i).errors?.min">
@@ -31,7 +31,7 @@
                 </button>
             </div>
         </div>
-        <button mat-raised-button color="primary" (click)="addGrade()">Agregar nota</button>
+        <button class="AddGrade" mat-raised-button color="primary" (click)="addGrade()">Agregar nota</button>
         <button mat-raised-button [disabled]="myForm.invalid" color="primary" (click)="getFinalGrade()">Calcular nota</button>
     </form>
 </mat-card>
