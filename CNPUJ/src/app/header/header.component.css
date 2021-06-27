@@ -92,7 +92,6 @@
    
    nav.feactures .feactures,
    nav.pricing .pricing,
-   nav.community .community,
-   nav.support .support{
+   nav.community .community{
     background-color:#9386cf;
    }
