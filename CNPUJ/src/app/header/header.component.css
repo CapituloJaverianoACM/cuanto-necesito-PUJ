@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:500,700");
+
+*{
+    font-family: 'Comfortaa';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+li {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+}
+
+sub {
+    padding-left: 5px;
+    font-size: small;
+    color: #18A0FB;
+}
+
+.actions {
+    color: #18A0FB;
+    cursor: pointer;
+}
