@@ -1,0 +1,35 @@
+<mat-card>
+    <form [formGroup]="myForm">
+        <mat-form-field>
+            <input matInput placeholder="Cantidad de créditos actuales" type="number" step="1" min="0" formControlName="actualCredits">
+            <mat-error *ngIf="actualCredits.errors?.min">
+                La cantidad de creditos debe ser positiva.
+            </mat-error>
+            <mat-error *ngIf="actualCredits.errors?.required">
+                Debes ingresar un valor.
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cantidad de créditos a ver" type="number" step="1" min="0" formControlName="toSeeCredits">
+            <mat-error *ngIf="toSeeCredits.errors?.min">
+                Debes ver al menos un crédito.
+            </mat-error>
+            <mat-error *ngIf="toSeeCredits.errors?.max">
+                No es posible inscribir más de 24 créditos.
+            </mat-error>
+            <mat-error *ngIf="toSeeCredits.errors?.required">
+                Debes ingresar un valor.
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Producto acumulado actual" type="number" step="1" min="0" formControlName="acumulated">
+            <mat-error *ngIf="acumulated.errors?.min">
+                La producto acumulado debe ser positivo.
+            </mat-error>
+            <mat-error *ngIf="acumulated.errors?.required">
+                Debes ingresar un valor.
+            </mat-error>
+        </mat-form-field>
+        <button mat-raised-button [disabled]="myForm.invalid" color="primary" (click)="calculateSituation()">Calcular</button>
+    </form>
+</mat-card>
