@@ -13,6 +13,7 @@ ul {
 }
 
 li {
+    font-size: 28px;
     float: left;
     display: block;
     color: black;
@@ -27,6 +28,7 @@ sub {
 }
 
 .actions {
+    font-size: 15px;
     color: #18A0FB;
     cursor: pointer;
 }

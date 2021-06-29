@@ -17,7 +17,10 @@ form
     min-width: 362px;
 }
 
-
+mat-card{
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
 mat-form-field
 {

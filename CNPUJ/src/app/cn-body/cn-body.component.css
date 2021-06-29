@@ -1,95 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400");
+
+*{
+    font-family: 'Montserrat';
+}
 
 .titulo{
-    position: absolute;
-    width: 750px;
-    height: 72px;
-    left: 40px;
-    top: 95px;
-    font-family: Montserrat;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 72px;
-    letter-spacing: -0.015em;
-    text-align: left;
-    }
-    .Descripcion{
-      position: absolute;
-    width: 1392px;
-    height: 100px;
-    left: 40px;
-    top: 188px;
+  font-style: normal;
+  text-align: left;
+  margin: 14px;
+}
+
+.Descripcion{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: 14px;
+}
+
+.CN_Materia{
+  width: 20%;
+  background: #F9F9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-right: 10%;
+}
+.CN_Prueba{
+  width: 20%;
+  background: #F9F9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.Opcion_Materia{
+  width: 50%;
+  height: 65%;
+}
+
+.Opcion_Prueba{
+  width: 50%;
+  height: 65%;
+}
     
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 50px;
-    
-    letter-spacing: -0.015em;
-    
-    color: rgba(0, 0, 0, 0.8);
-    }
-    .CN_Materia{
-      position: absolute;
-    width: 431px;
-    height: 621px;
-    left: 163px;
-    top: 345px;
-    
-    background: #F4F4F4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .Opcion_Materia{
-      position: absolute;
-    width: 431px;
-    height: 621px;
-    left: 0px;
-    top: 0px;
-    }
-    .CN_Prueba{
-    
-    position: absolute;
-    width: 431px;
-    height: 623px;
-    left: 876px;
-    top: 344px;
-    
-    background: #F4F4F4;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .Opcion_Prueba{
-      position: absolute;
-      width: 431px;
-      height: 621px;
-      left: 0px;
-      top: 0px;
-    }
-    
-    .Logo_ACM{
-      position: absolute;
-    width: 147px;
-    height: 150px;
-    left: 658px;
-    top: 1011px;
-    }
-    .Separacion{
-      position: absolute;
-    width: 1354px;
-    height: 1px;
-    left: 39px;
-    top: 1206px;
-    
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    p{
-      position: absolute;
-    width: 1354px;
-    height: 1px;
-    left: 39px;
-    top: 1206px;
-    }
-    
+.Logo_ACM{
+  width: 5%;
+  height: 10%;
+  padding: 20px;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+}
+
+section h2{
+  text-align: center;
+  padding: 14px 14px;
+}
+
+article{
+  display: inline-block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section{
+  text-align: center;
+}
+
+hr{
+  margin: 14px;
+}
