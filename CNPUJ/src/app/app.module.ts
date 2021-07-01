@@ -18,6 +18,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import { AcademicComponent } from './academic/academic.component';
 import { AcademicinformationComponent } from './academicinformation/academicinformation.component'; 
+import { AppRoutingModule } from './app-routing.module';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { AcademicinformationComponent } from './academicinformation/academicinfo
     GradelistComponent,
     GradeinformationComponent,
     AcademicComponent,
-    AcademicinformationComponent
+    AcademicinformationComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { AcademicinformationComponent } from './academicinformation/academicinfo
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

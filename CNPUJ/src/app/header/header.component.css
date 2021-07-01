@@ -19,6 +19,7 @@ li {
     color: black;
     text-align: center;
     padding: 14px 14px;
+    cursor: pointer;
 }
 
 sub {
@@ -30,5 +31,4 @@ sub {
 .actions {
     font-size: 15px;
     color: #18A0FB;
-    cursor: pointer;
 }
