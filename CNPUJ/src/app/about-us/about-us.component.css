@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400");
+
+*{
+    font-family: 'Montserrat';
+}
+
 html
 {
     font-size: 62.5%;
@@ -60,7 +66,20 @@ h2
     font-size: 1rem;
 }
 
+.Logo_ACM{
+    width: 5%;
+    height: 10%;
+    padding: 20px;
+    text-align: center;
+}
 
+.Logo{
+    text-align: center;
+}
+
+hr{
+    margin: 14px;
+}
 
 
 @media only screen and (max-width: 1067px) {

@@ -1,8 +1,5 @@
 <h1 class="titulo"> Cuanto Necesito PUJ: {{this.titleInfo}} </h1>
-<p class="Descripcion">Es un sistema que, además de dedecirte cuanto
-  necesitas para pasar una materia, también te dice
-  cuanto necesitas en el semestre para evitar la prueba
-  académica.</p>
+<p class="Descripcion">{{this.description}}</p>
   <section>
     <div *ngIf="grades; else academic_content">
       <app-gradelist></app-gradelist>
