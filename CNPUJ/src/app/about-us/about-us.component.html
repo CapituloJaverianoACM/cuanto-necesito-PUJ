@@ -1,0 +1,16 @@
+<section class="about-us">
+    <h2>Sobre nosotros</h2>
+    <section class="cards-container">
+        <article class="card" *ngFor="let person of information;">
+            <img class="card__image" [src]="person.image" alt="">
+            <div class="card__description">
+                <h6>{{ person.name }}</h6>
+                <p>{{ person.description }}</p>
+            </div>
+        </article>
+    </section>
+</section>
+<div class="Logo">
+    <img class="Logo_ACM" src="assets/logos/ACM_LOGO.png">
+</div>
+<hr>

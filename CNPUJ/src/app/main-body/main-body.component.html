@@ -1,1 +1,14 @@
-<p>main-body works!</p>
+<h1 class="titulo"> Cuanto Necesito PUJ: {{this.titleInfo}} </h1>
+<p class="Descripcion">{{this.description}}</p>
+  <section>
+    <div *ngIf="grades; else academic_content">
+      <app-gradelist></app-gradelist>
+    </div>
+    <ng-template #academic_content>
+      <app-academic></app-academic>
+    </ng-template>
+  </section>
+  <div>
+    <img class="Logo_ACM" src="assets/logos/ACM_LOGO.png">
+  </div>
+  <hr>

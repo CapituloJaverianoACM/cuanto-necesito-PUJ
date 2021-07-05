@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400");
+
+*{
+    font-family: 'Montserrat';
+}
+
+.titulo{
+  font-style: normal;
+  text-align: left;
+  margin: 14px;
+}
+
+.Descripcion{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: 14px;
+}
+
+.Logo_ACM{
+  width: 5%;
+  height: 10%;
+  padding: 20px;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+}
+
+hr{
+  margin: 14px;
+}

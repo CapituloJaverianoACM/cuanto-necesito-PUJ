@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400");
+
+*{
+    font-family: 'Montserrat';
+}
+
+.titulo{
+  font-style: normal;
+  text-align: left;
+  margin: 14px;
+}
+
+.Descripcion{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: 14px;
+}
+
+.CN_Materia{
+  width: 20%;
+  background: #F9F9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-right: 10%;
+}
+.CN_Prueba{
+  width: 20%;
+  background: #F9F9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+.Opcion_Materia{
+  width: 50%;
+  height: 65%;
+}
+
+.Opcion_Prueba{
+  width: 50%;
+  height: 65%;
+}
+    
+.Logo_ACM{
+  width: 5%;
+  height: 10%;
+  padding: 20px;
+  text-align: center;
+}
+
+div{
+  text-align: center;
+}
+
+section h2{
+  text-align: center;
+  padding: 14px 14px;
+}
+
+article{
+  display: inline-block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section{
+  text-align: center;
+}
+
+hr{
+  margin: 14px;
+}
